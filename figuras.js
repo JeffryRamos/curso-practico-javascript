@@ -90,3 +90,27 @@ function calcularAreaCirculo(){
     const area = areaCirculo(valueRadio);
     alert(area);
 }
+
+//codigo del reto, calcular la altura de un triangulo isoceles
+
+function calcularIsocelesAltura(){
+    const lado1 = document.getElementById("inputIsocelesLado1");
+    const valuelado1 = parseInt(lado1.value, 10);
+
+    const lado2 = document.getElementById("inputIsocelesLado2");
+    const valuelado2 = parseInt(lado2.value, 10);
+
+    const base = document.getElementById("inputIsocelesBase");
+    const valuebase = parseInt(base.value, 10);
+    
+
+    if(valuelado1 === valuelado2){
+        
+        const altura = Math.sqrt((valuelado1*valuelado1)-((valuebase*valuebase)/4));
+        alert(altura);
+
+    }else{
+        alert("las medidas que introdujo no son de un triangulo de isoceles, por favor compruebe si las medidas son correctas")
+    }
+
+}
