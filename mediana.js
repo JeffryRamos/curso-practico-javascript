@@ -6,14 +6,21 @@ function calcularMediaAritmetica(lista){
     );
      const promedioLista = sumaLista / lista.length;
      return promedioLista; 
- }
-
-function calcularLista(lista) {
-    let listaOrdenada = lista.sort();
-    return listaOrdenada
 }
 
-const mitadLista1 = parseInt(calcularLista.length/2) ;
+/*
+function ordenarLista (numeros){
+    var ordenarLista = [numeros];
+    function comparar(a,b){
+        return a - b;
+    }
+    return ordenarLista.sort(comparar);
+}
+*/
+
+var ordenarLista = [ 200,5,1,40 ];
+ordenarLista.sort((a,b)=>a-b);  // [ 1, 5, 40, 200 ]
+
 
 function esPar(numerito){
     if (numerito % 2 === 0){
@@ -23,17 +30,22 @@ function esPar(numerito){
     }
 }
 
-let mediana;
 
-if(esPar(calcularLista.length)){
-    const elemento1 = calcularLista[mitadLista1 - 1];
-    const elemento2 = calcularLista[mitadLista1];
+    const mitadLista1 = parseInt(ordenarLista.length/2) ;
 
-    const promedioElemeneto1y2 = calcularMediaAritmetica([elemento1,elemento2]);
+    let mediana;
 
-    mediana = promedioElemeneto1y2;
-
+    if(esPar(ordenarLista.length)){
+        const elemento1 = ordenarLista[mitadLista1 - 1];
+        const elemento2 = ordenarLista[mitadLista1];
     
-}else{
-    mediana = calcularLista[mitadLista1];
-}
+        const promedioElemeneto1y2 = calcularMediaAritmetica([elemento1,elemento2]);
+    
+        mediana = promedioElemeneto1y2;
+    
+        
+    }else{
+        mediana = ordenarLista[mitadLista1];
+    }
+    console.log(mediana);
+
