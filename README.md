@@ -16,3 +16,10 @@ desarrollo del curso practico de javascript en platzi
 - segundo: implementar las formulas en js
 - tercer: crear funciones
 - cuarto: integrar js con html 
+
+## taller #3: promedio, mediana y moda
+ 
+- perimer paso: definir las formulas
+- segundo: implementar las formulas en js
+- tercer: crear funciones
+- cuarto: integrar js con html 
